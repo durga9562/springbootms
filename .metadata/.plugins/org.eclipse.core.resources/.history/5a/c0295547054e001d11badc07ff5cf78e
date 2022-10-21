@@ -1,0 +1,126 @@
+package com.example.demo.entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="users")
+public class users {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+	private Date DOB;
+	private Long MobileNo;
+	private int role_id;
+	private Date Created_Date;
+	private Date Updated_Date_Time;
+
+	public users() {
+
+	}
+
+	public users(Integer uid, String firstName, String lastName, String email, String password, Date dOB,
+			Long mobileNo, int role_id, Date created_Date, Date updated_Date_Time) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.password = password;
+		DOB = dOB;
+		MobileNo = mobileNo;
+		this.role_id = role_id;
+		Created_Date = created_Date;
+		Updated_Date_Time = updated_Date_Time;
+	}
+
+	public Integer getUid() {
+		return id;
+	}
+
+	public void setUid(Integer uid) {
+		this.id = uid;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Date getDOB() {
+		return DOB;
+	}
+
+	public void setDOB(Date dOB) {
+		DOB = dOB;
+	}
+
+	public Long getMobileNo() {
+		return MobileNo;
+	}
+
+	public void setMobileNo(Long mobileNo) {
+		MobileNo = mobileNo;
+	}
+
+	public int getRole_id() {
+		return role_id;
+	}
+
+	public void setRole_id(int role_id) {
+		this.role_id = role_id;
+	}
+
+	public Date getCreated_Date() {
+		return Created_Date;
+	}
+
+	public void setCreated_Date(Date created_Date) {
+		Created_Date = created_Date;
+	}
+
+	public Date getUpdated_Date_Time() {
+		return Updated_Date_Time;
+	}
+
+	public void setUpdated_Date_Time(Date updated_Date_Time) {
+		Updated_Date_Time = updated_Date_Time;
+	}
+
+}

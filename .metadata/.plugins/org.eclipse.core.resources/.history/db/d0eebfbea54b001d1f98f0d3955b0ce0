@@ -1,0 +1,24 @@
+package com.example.demo.entity;
+
+import java.util.Date;
+
+public class users {
+private Integer uid;
+private String firstName;
+private String lastName;
+private String email;
+private String password;
+private Date DOB;
+private Double MobileNo;
+private int role_id;
+private Date Created_Date;
+private Date Updated_Date_Time;
+
+
+public users() {
+
+}
+
+
+ 
+}
